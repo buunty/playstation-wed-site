@@ -1,0 +1,77 @@
+<!DOCTYPE html> 
+ <html>
+ <head>
+     <mela name="viewporl" conlent="width-device-width, inilial-scale-1.0">
+    <title>Gaming Website Page - Easy Tutorials</title>
+     <link rel="stylesheet" href="styLe.css">
+</head>
+ <body>
+<!--This DEV is for container-->     
+   <div class="container">
+    <div class="navbar">
+        <img src="images/logo.png" class="logo">
+        <nav>
+            <ul id="menuList">
+                <li><a href="">Game Controllers</a></li>
+                <li><a href="">VR Accessories</a></li>
+                <li><a href="">Media Remotes</a></li>
+                <li><a href="">Others</a></li>
+            </ul>
+        </nav>
+        <img src="images/menu.png" class="menu" onclick="togglemenu()">
+    </div>
+   
+<!--This for  Details for col-01 -->
+    <div class="row">
+        <div class="col-1">
+                  <h2 >PS4 V2<br> Dualshock 4</h2>
+                  <h3>Wirless Controller for playstation4</h3>
+                  <p>(compatitible/Generic)</p>
+                  <h4>$100</h4>
+                  <button type="button">Buy Now<img src="images/arrow.png">
+                  </button>
+        </div>
+
+
+<!--This for  Details for col-02 for image controller to Right side  -->
+        <div class="col-2">
+            <img src="images/controller.png" class="controller">
+
+<!--This DIV is  for  background image under the contriller -->            
+             <div class="color-box"></div>
+
+<!--This DIV is  for the Add icon in the backround image  --> 
+             <div class="add-btn">
+                <img src="images/add.png">
+                <p><small>Add to Cart</small></p>
+             </div>
+        </div> 
+         </div> 
+    
+<!--This DIV is  for the Adding social media  icon  -->
+
+    <div class="social-links">
+        <img src="images/fb.png">
+        <img src="images/tw.png">
+        <img src="images/ig.png">
+    </div>
+    
+   </div>
+<!--This is script is for the Menu for Mobile-->
+   <script>
+    var menuList = document.getElementById("menuList");
+    menuList.style.maxHeight = "0px";
+    function togglemenu(){
+        if(menuList.style.maxHeight=="0px")
+        {
+            menuList.style.maxHeight=="130px";  
+        }
+        else
+        {
+            menuList.style.maxHeight=="0px";
+        }
+    }
+   </script>
+
+</body>
+</html>
